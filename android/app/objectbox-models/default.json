@@ -1,0 +1,145 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4592519477996995759",
+      "lastPropertyId": "3:6571705949303756848",
+      "name": "History",
+      "properties": [
+        {
+          "id": "1:8506404577555143139",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:530640390244166737",
+          "name": "url",
+          "type": 9
+        },
+        {
+          "id": "3:6571705949303756848",
+          "name": "timestamp",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:6537446072410690308",
+      "lastPropertyId": "2:3789139629078479583",
+      "name": "PrinterTag",
+      "properties": [
+        {
+          "id": "1:1717722168116056574",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:3789139629078479583",
+          "name": "name",
+          "indexId": "5:3891882739704598302",
+          "type": 9,
+          "flags": 2080
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:5045117478105979716",
+      "lastPropertyId": "13:5750773579204883615",
+      "name": "SavedPrinter",
+      "properties": [
+        {
+          "id": "1:1840764772689205261",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6464116100974542786",
+          "name": "tag",
+          "indexId": "2:4712788642271789314",
+          "type": 9,
+          "flags": 2080
+        },
+        {
+          "id": "3:7138359309346376553",
+          "name": "type",
+          "type": 5
+        },
+        {
+          "id": "4:1621190672710824995",
+          "name": "manufacturer",
+          "type": 5
+        },
+        {
+          "id": "5:5128431260206157356",
+          "name": "model",
+          "type": 9
+        },
+        {
+          "id": "6:1717704124600746876",
+          "name": "index",
+          "type": 5
+        },
+        {
+          "id": "7:3077807772725994687",
+          "name": "portName",
+          "indexId": "3:1717746549118336284",
+          "type": 9,
+          "flags": 2080
+        },
+        {
+          "id": "8:2210617395400525744",
+          "name": "portSettings",
+          "type": 9
+        },
+        {
+          "id": "9:4133843143115687942",
+          "name": "macAddress",
+          "indexId": "4:8414931384286542889",
+          "type": 9,
+          "flags": 2080
+        },
+        {
+          "id": "10:4802906441237179234",
+          "name": "cashDrawerOpenStatus",
+          "type": 1
+        },
+        {
+          "id": "11:8796532945309225893",
+          "name": "paperSize",
+          "type": 5
+        },
+        {
+          "id": "12:6060833986503410037",
+          "name": "instructionType",
+          "type": 5
+        },
+        {
+          "id": "13:5750773579204883615",
+          "name": "charsetEncoding",
+          "type": 5
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:5045117478105979716",
+  "lastIndexId": "5:3891882739704598302",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [
+    2424947473925067353
+  ],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

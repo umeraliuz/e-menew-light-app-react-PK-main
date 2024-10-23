@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="confirm_printer">Confirm. What is your printer?</string>
+    <string name="confirm">Confirm?</string>
+    <string name="is_your_printer">Is your printer %1$s?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="select_paper_size">Select paper size.</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_cash_drawer_status">Select CashDrawer Open Status.</string>
+</resources>

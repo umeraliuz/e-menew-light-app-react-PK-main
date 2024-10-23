@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_200">#B3EBE9</color>
+    <color name="primary_500">#3BCAC5</color>
+    <color name="primary_700">#227D7A</color>
+    <color name="secondary_200">#C4F7E5</color>
+    <color name="secondary_500">#3CE6A8</color>
+    <color name="secondary_700">#15A772</color>
+    <color name="error_500">#F44336</color>
+    <color name="error_700">#D32F2F</color>
+    <color name="outline">#1f000000</color>
+
+    <!-- Old -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surfaceDark">#F3F3F8</color>
+    <color name="titleTextColor">#2C2A65</color>
+    <color name="primaryTextColor">#383536</color>
+    <color name="hintTextColor">#383536</color>
+    <color name="linkTextColor">#3FD7D0</color>
+    <color name="borderColor">#4D707070</color>
+
+    <color name="ic_launcher_background">#FFFFFF</color>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surfaceDark"
+    tools:context=".ui.print.PrinterInfoActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@android:color/transparent"
+        android:theme="@style/Theme.App.PopUpOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/surfaceDark"
+            android:elevation="0dp"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.App.ScreenTitle"
+            app:expandedTitleTextAppearance="@style/TextAppearance.App.ScreenTitle.Collapsing"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:maxLines="2">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/surfaceDark"
+                android:elevation="0dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Theme.App.PopUpOverlay"
+                app:title="@string/home_title" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/content"
+        layout="@layout/content_printer_info" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

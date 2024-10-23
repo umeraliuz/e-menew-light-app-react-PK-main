@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="16dp"
+                app:contentPadding="8dp"
+                app:strokeColor="@color/outline"
+                app:strokeWidth="1dp">
+
+                <!--<io.ezeelabs.starprnt.utils.CustomBitmapReceipt
+                    android:id="@+id/three_inch_print_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />-->
+
+                <com.emenuapp_pk.parser.PrintPreview
+                    android:id="@+id/three_inch_print_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/test_printer_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_fab"
+        android:contentDescription="@string/test_print"
+        android:elevation="8dp"
+        android:src="@drawable/ic_print" />
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/devicesFragment">
+
+
+    <fragment
+        android:id="@+id/devicesFragment"
+        android:name="com.emenuapp_pk.ui.devices.DevicesFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_devices">
+        <action
+            android:id="@+id/toAddGenericPrinterFragment"
+            app:destination="@id/addGenericPrinterFragment" />
+        <action
+            android:id="@+id/toAddStarPrinterFragment"
+            app:destination="@id/addStarPrinterFragment" />
+        <action
+            android:id="@+id/toHistoryFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/toEditGenericPrinterFragment"
+            app:destination="@id/editGenericPrinterFragment" />
+        <action
+            android:id="@+id/toEditStarPrinterFragment"
+            app:destination="@id/editStarPrinterFragment" />
+        <action
+            android:id="@+id/toAddSunmiPrinterFragment"
+            app:destination="@id/addSunmiPrinterFragment" />
+        <action
+            android:id="@+id/toEditSunmiPrinterFragment"
+            app:destination="@+id/editSunmiPrinterFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addGenericPrinterFragment"
+        android:name="com.emenuapp_pk.ui.printer.AddGenericPrinterFragment"
+        android:label="@string/label_printer"
+        tools:layout="@layout/fragment_add_generic_printer">
+        <argument
+            android:name="manufacturer"
+            app:argType="com.emenuapp_pk.data.local.model.Manufacturer" />
+        <argument
+            android:name="printerType"
+            app:argType="com.emenuapp_pk.data.local.model.PrinterType" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editGenericPrinterFragment"
+        android:name="com.emenuapp_pk.ui.printer.EditGenericPrinterFragment"
+        android:label="@string/label_printer"
+        tools:layout="@layout/fragment_edit_generic_printer">
+        <argument
+            android:name="printer"
+            app:argType="com.emenuapp_pk.data.local.model.SavedPrinter" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addStarPrinterFragment"
+        android:name="com.emenuapp_pk.ui.printer.AddStarPrinterFragment"
+        android:label="@string/label_printer"
+        tools:layout="@layout/fragment_add_start_printer">
+        <argument
+            android:name="manufacturer"
+            app:argType="com.emenuapp_pk.data.local.model.Manufacturer" />
+        <argument
+            android:name="printerType"
+            app:argType="com.emenuapp_pk.data.local.model.PrinterType" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/editStarPrinterFragment"
+        android:name="com.emenuapp_pk.ui.printer.EditStarPrinterFragment"
+        android:label="@string/label_printer"
+        tools:layout="@layout/fragment_edit_start_printer">
+        <argument
+            android:name="printer"
+            app:argType="com.emenuapp_pk.data.local.model.SavedPrinter" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addSunmiPrinterFragment"
+        android:name="com.emenuapp_pk.ui.printer.AddSunmiPrinterFragment"
+        android:label="@string/label_printer"
+        tools:layout="@layout/fragment_add_sunmi_printer">
+        <argument
+            android:name="manufacturer"
+            app:argType="com.emenuapp_pk.data.local.model.Manufacturer" />
+        <argument
+            android:name="printerType"
+            app:argType="com.emenuapp_pk.data.local.model.PrinterType" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editSunmiPrinterFragment"
+        android:name="com.emenuapp_pk.ui.printer.EditSunmiPrinterFragment"
+        android:label="@string/label_printer"
+        tools:layout="@layout/fragment_edit_sunmi_printer">
+
+        <argument
+            android:name="printer"
+            app:argType="com.emenuapp_pk.data.local.model.SavedPrinter" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.emenuapp_pk.ui.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.emenuapp_pk.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

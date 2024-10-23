@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ui.main.MainActivity">
+
+<!--    <com.google.android.material.navigationrail.NavigationRailView-->
+<!--        android:id="@+id/navigation_rail_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/bg_gradient_vertical"-->
+<!--        app:elevation="16dp"-->
+<!--        app:itemIconSize="24dp"-->
+<!--        app:itemIconTint="@color/color_navigation_rail_icon"-->
+<!--        app:itemTextColor="@color/color_navigation_rail_icon"-->
+<!--        app:menu="@menu/menu_main"-->
+<!--        app:menuGravity="center" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation" />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/rail_toggle_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:background="@drawable/bg_rail_toggle_button"-->
+<!--            android:contentDescription="@string/label_toggle_navigation"-->
+<!--            android:padding="8dp"-->
+<!--            android:src="@drawable/ic_rail_toggle" />-->
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
